@@ -26,7 +26,7 @@ class ProductDetailsScreen extends StatelessWidget {
               'Price: \$${product.price.toStringAsFixed(2)}',
               style: TextStyle(fontSize: 18.0),
             ),
-            SizedBox(height: 8.0),
+            SizedBox(height: 16.0),
             Text(
               'Description:',
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
@@ -35,6 +35,13 @@ class ProductDetailsScreen extends StatelessWidget {
             Text(
               product.description,
               style: TextStyle(fontSize: 16.0),
+            ),
+            SizedBox(height: 16.0),
+            ElevatedButton(
+              onPressed: () {
+                // Add functionality here
+              },
+              child: Text('Add to Cart'),
             ),
           ],
         ),
